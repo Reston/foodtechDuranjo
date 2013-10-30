@@ -1,4 +1,77 @@
 @charset 'utf-8';
+/* SLIDER BANNER INICIO */
+h1{
+	margin: 0;
+	padding: 18px;
+	text-align: center;
+	background: white;
+	font-size: 2em;
+}
+h2{
+	text-align: center;
+}
 .flexslider{
 	border: 22px solid #FFF;
+}
+
+/* PRODUCTOS OFRECIDOS LINEA VERDE*/
+.ofrecemos{
+	background: green;
+}
+.productos{
+	margin: 0;
+	padding: 30px 0;
+}
+.productos li{
+	display: inline-block;
+	width: 16%;
+}
+.productos span{
+	display: block;
+	text-align: center;
+}
+/* About US noticias y intro*/
+.aboutus{
+	padding: 50px 0; 
+}
+.introEmpresa, .ultimasNoticias{
+	background: url(../../img/bedge_grunge_@2X.png);
+	border-radius: 5px;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+.introEmpresa  span, .ultimasNoticias  span{
+	text-align: center;
+	border-top: 3px double brown;
+	border-bottom: 3px double brown;
+}
+.introEmpresa{
+	width: 29%;
+	margin-right: 2%;
+}
+.introEmpresa p{
+	text-align: justify;
+}
+.ultimasNoticias{
+	width: 65%;
+}
+.ultimasNoticias .noticia{
+	width: 45%;
+	display: inline-block;	
+}
+.noticia img{
+	width: 95%;
+	border: 5px solid gold;
+}
+.noticia p{
+	text-align: justify;
+}
+
+/* Clientes lista*/
+.infoCliente h2 span{
+	text-align: center;
+	border-top: 3px double brown;
+	border-bottom: 3px double brown;
 }

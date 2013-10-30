@@ -31,11 +31,45 @@ Foodtech Inicio
 			<h1>Líder en Carnes Maduradas</h1>
 		</div>
 	</section>
-	<section class="ofrecemos">		
+	<section class="ofrecemos">
+		<div class="wrapper">
+			<ul class="productos">
+				<li><img src="{% static 'img/circu.png' %}" alt="Carne de res"><span>il lorem ipsum.</span></li>
+				<li><img src="{% static 'img/circu.png' %}" alt="Jamón"><span>il lorem ipsum.</span></li>
+				<li><img src="{% static 'img/circu.png' %}" alt="Pollo"><span>il lorem ipsum.</span></li>
+				<li><img src="{% static 'img/circu.png' %}" alt="Pastrini"><span>il lorem ipsum.</span></li>
+				<li><img src="{% static 'img/circu.png' %}" alt="Salsa"><span>il lorem ipsum.</span></li>
+				<li><img src="{% static 'img/circu.png' %}" alt="Delicateses"><span>il lorem ipsum.</span></li>
+			</ul>
+		</div>
 	</section>
-	<section class="aboutus">		
+	<section class="aboutus">
+		<div class="wrapper">
+			<div class="introEmpresa">
+				<h2><span>FoodTech</span></h2>
+				<p>Natoque odio habitasse, tincidunt, odio pid! Odio cum nec, proin, nec ridiculus, ridiculus egestas mus dis, etiam ridiculus, mid et ultricies vel adipiscing porttitor? Porta</p>
+				<img src="{% static 'img/logo.png' %}" alt="logo de la empresa foodtech" width="150" class="logo">
+			</div>
+			<div class="ultimasNoticias">
+				<h2><span>Últimas noticias</span></h2>
+				<article class="noticia">
+					<img src="{% static 'img/img1.jpg' %}" alt="foto noticia foodtech">
+					<h3>Il lorem ipsum.</h3>
+					<p>Natoque odio habitasse, tincidunt, odio pid! Odio cum nec, proin, nec ridiculus, ridiculus egestas mus dis, etiam ridiculus, mid et ultricies.</p>
+				</article>
+				<article class="noticia">
+					<img src="{% static 'img/img1.jpg' %}" alt="foto noticia foodtech">
+					<h3>Il lorem ipsum.</h3>
+					<p>Natoque odio habitasse, tincidunt, odio pid! Odio cum nec, proin, nec ridiculus, ridiculus egestas mus dis, etiam ridiculus, mid et ultricies.</p>
+				</article>
+			</div>
+		</div>
 	</section>
-	<section class="infoContacto">
+	<section class="infoCliente">
+		<div class="wrapper">
+			<h2><span>Nuestros clientes</span></h2>
+			<img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+		</div>
 	</section>
 {% endblock%}
 {% block jsinit %}

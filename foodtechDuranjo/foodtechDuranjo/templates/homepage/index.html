@@ -5,28 +5,30 @@
 <meta name="description" content="">
 {% endblock%}
 {% block title %}
-Duranjo Web
+Foodtech Inicio
 {% endblock%}
 {% block css%}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
+<link rel="stylesheet" href="{% static 'css/homepage/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="{% static 'js/adquiridos/jquery.flexslider-min.js' %}"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
-{% endblock %}
-{% block navi %}
-		<ul>
-			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-			<li class="works"><a href="{% url 'homepageworks' %}">Trabajos</a></li>
-			<li class="services"><a href="{% url 'homepageservices' %}">Servicios</a></li>
-			<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
-		</ul>				
 {% endblock %}
 {% block clear %}{% endblock%}
 {% block contenido %}
 	<section class="bannerPrincipal">
-		<h1>Titulo importante</h1>
-		<div class="wrapper banner1">
+		<div class="wrapper">
+			<div class="sliderPosition">
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="{% static 'img/img1.jpg' %}" alt="blablar"></li>
+						<li><img src="{% static 'img/img2.jpg' %}" alt="edificios"></li>
+				 	</ul>
+				</div>		
+			</div>
+			<h1>Líder en Carnes Maduradas</h1>
 		</div>
 	</section>
 	<section class="ofrecemos">		
@@ -34,7 +36,17 @@ Duranjo Web
 	<section class="aboutus">		
 	</section>
 	<section class="infoContacto">
-	</section>	
+	</section>
+{% endblock%}
+{% block jsinit %}
+<!-- SLIDER INIT -->
+	<script>
+			$(document).ready(function() {
+			  $('.flexslider').flexslider({
+			  	//animation: "slide" si las imagenes son diferente tamaño poner sin slide
+			  });
+			});
+	</script>
 	<!-- Google+ SCRIPT --> 
 		<!-- Place this tag after the last badge tag. -->
 		<script  async type="text/javascript">
@@ -56,9 +68,8 @@ Duranjo Web
 		}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- TWITTER SCRIPT -->
 	<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	
 	<!-- BACK TOP BOX -->
 	<div id="back-top" class="back-top">
 		<a href="#home"><span>↑</span>Regresar arriba</a>
 	</div>
-{% endblock%}
+{% endblock jsinit %}

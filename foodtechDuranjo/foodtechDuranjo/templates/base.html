@@ -6,16 +6,16 @@
 <!--[if lt IE 8]><script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/ie6-not-supported.js" ></script><![endif]-->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/PIE.js"></script>
 <![endif]-->
-<meta name="keywords" content="Diseño Web,Software,Gráfico,Páginas web,Venezuela,Maracaibo,Presupuesto,Planes, sitio web">
-<meta name="author" content="José Ordoñez, Diana Chavez y Elibeth Quiñones">
+<meta name="keywords" content="Comida, Carnes, Maduradas, Jamón, Maracaibo, Salsa BBQ, Medallones de pollo, Lomo de aguja, Costillas">
+<meta name="author" content="Duranjo Web C.A.">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 {% block head %} {% endblock%}
-<link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
 <title>{% block title %} {% endblock%}</title>
-<link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
+<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block css %}
 {% endblock %}
 {% block js %}
@@ -33,9 +33,29 @@
 	  ga('send', 'pageview');
 	</script> -->
 	<header id="home" class="cabecera">
-		<div class="wrapper">				
+		<div class="wrapper">	
+			<div class="contactoInfo">
+				<p>Teléfono: (0261) 7543220 - 7781171 <img src="{{ STATIC_URL }}img/banderita.png" alt="bandera de Venezuela"></p>
+									
+			</div>			
+			<div class="rifEmpresa">
+				<div class="rif"><p>RIF: j-XXXXXXXX-X</p></div>
+				<div class="redes">
+					<div class="facebook"></div>
+					<div class="twitter"></div>
+				</div>
+			</div>			
+			<div class="logoEmpresa">
+				<a href="{% url 'homepageindex' %}" title="Foodtech de Venezuela"><img class="logoMenu" src="{% static 'img/logo.png' %}" alt="logo foodtech"></a>
+				<!-- colocar después en css con el tamaño -->
+			</div>			
 			<nav class="barraNavegacion">
-				{% block navi %} {% endblock%}
+				<ul>
+					<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+					<li class="about"><a href="{% url 'homepageabout' %}">Sobre nosotros</a></li>
+					<li class="products"><a href="{% url 'homepageproduct' %}">Productos</a></li>
+					<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+				</ul>
 			</nav>
 		</div>
 	</header>
@@ -46,11 +66,42 @@
 	<footer>
 		{% block footer %}{% endblock%}
 		<div class="wrapper">
-			<div class="footer-der">
-			</div>
-			<div class="footer-izq">
-			</div>		  
+			<ul class="listaPrincipalFooter">
+				<li class="logo">
+					<img class="logoFooter" src="{% static 'img/logo.png' %}" alt="Logo foodtech">
+				</li>
+				<li class="menu1">
+					<ul class="sublistaMenu">
+						<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+						<li class="about"><a href="{% url 'homepageabout' %}">Sobre nosotros</a></li>
+						<ul><li><a href="{% url 'homepageabout' %}#clientes">Nuestros clientes</a></li></ul>
+						<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="menu2">
+					<ul class="sublistaMenu">
+						<li class="orlando"><a href="{% url 'homepageproduct' %}">Productos</a></li>
+						<li>Blog</li>
+					</ul>
+				</li>
+				<li class="atencionFooter">
+					<div class="horario">
+						<div>
+							Horario de atención: Lunes a Viernes 9:00 AM a 4:00 PM
+						</div>
+						<div><span class="flagVe"></span>(0261) 7543220 - 7781171</div>
+						<div class="redeSociales">
+							<a href="https://twitter.com/"><div class="twitterlogo"></div></a>
+							<a href="https://facebook.com/"><div class="facebook"></div></a>
+							<a href="https://plus.google.com/"><div class="googleplus"></div></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="copyRight">Foodtech® Copyright ©. Todos los derechos reservados.</div>
 		</div>
 	</footer>
+	{% block jsinit %}
+	{% endblock %}
 </body>
 </html>

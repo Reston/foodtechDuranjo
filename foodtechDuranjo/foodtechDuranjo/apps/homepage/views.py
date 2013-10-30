@@ -10,17 +10,14 @@ def index(request):
 	return render_to_response('homepage/index.html', context_instance=RequestContext(request))
 
 
-def works(request):
-	mision = "misión de la empresa"
-	vision = "visión de la empresa"
-	ctx = {'mision': mision, 'vision': vision}
+def about(request):
+	sobrenosotros = "misión de la empresa"
+	ctx = {'sobrenosotros': sobrenosotros}
 	return render_to_response('homepage/trabajos.html', ctx, context_instance=RequestContext(request))
 
 
-def services(request):
-	serv = "El arte de servir"
-	ctx = {'serv': serv}
-	return render_to_response('homepage/servicios.html', ctx, context_instance=RequestContext(request))
+def products(request):
+	return render_to_response('homepage/servicios.html', context_instance=RequestContext(request))
 
 
 def contact(request):

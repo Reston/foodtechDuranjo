@@ -27,9 +27,9 @@ def contact(request):
 		if form.is_valid():
 			success = True
 			cd = form.cleaned_data
-			asunto = u'Por: %s mail: %s Tipo de servicio: %s Plan: %s' % (cd['nombre'], cd['email'], cd['tipoServicio'], cd['planes'])
-			content = u'Email contacto: %s \nAsunto: %s \nTelefono: %s \nDescripcion: %s' % (cd['email'], asunto, cd['telefono'], cd['texto'])
-			send_mail(asunto, content, cd['email'], ['info@foodtech.com.ve'])
+			asunto = u'Por: %s mail: %s Empresa: %s' % (cd['nombre'], cd['empresa'], cd['email'])
+			content = u'Empresa: %s Email contacto: %s \nAsunto: %s \nTelefono: %s \nDescripcion: %s' % (cd['empresa'], cd['email'], asunto, cd['telefono'], cd['texto'])
+			send_mail(asunto, content, 'info@foodtech.com.ve', ['info@foodtech.com.ve']) #falta enviar a los demás correos que dijeron
 	else:
 		form = contactForm()
 	ctx = {'form': form, 'success': success}

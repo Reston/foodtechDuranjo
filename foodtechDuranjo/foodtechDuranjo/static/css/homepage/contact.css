@@ -1,0 +1,56 @@
+@charset 'utf-8';
+h2{
+	margin: 0;
+}
+form{
+	background: url(../../img/bedge_grunge_@2X.png);
+	border-radius: 15px;
+	padding: 15px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+.tituloStyle{
+	background: url(../../img/fondotitulo.png) no-repeat;
+	width: 334px;
+	height: 84px;
+	text-align: center;
+	line-height: 84px;
+	margin: 0 auto;
+	position: relative;
+	bottom: -40px;
+}
+input, textarea{
+	background: #FBF5E0;
+	border: 1px solid #CCC;
+}
+.contactoCampos, .textareaDescripcion{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+.campo{
+	margin: 0 auto 10px auto;
+}
+.campo label {
+	float: left;
+	width: 350px;
+	margin-bottom: 3px;
+}
+.campo input{
+	text-indent: 5px;
+	height: 33px;
+	width: 84%;
+}
+textarea{
+	border: 1px solid #CCC;
+	width: 84%;
+}
+.botonEnviar{
+	text-align: right;
+	padding-right: 85px;
+}
+input[type="submit"]{
+	background: #008000;
+	padding: 10px 25px;
+	color: #FFF;
+}

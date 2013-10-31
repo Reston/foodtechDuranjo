@@ -5,6 +5,7 @@ from django import forms
 
 class contactForm(forms.Form):
 	nombre = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su nombre'}))
+	empresa = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Razón Social'}))
 	email = forms.EmailField(widget=forms.TextInput(attrs={'placeholder': ' nick@email.com'}))
 	telefono = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su Número de teléfono'}))
 	texto = forms.CharField(widget=forms.Textarea)

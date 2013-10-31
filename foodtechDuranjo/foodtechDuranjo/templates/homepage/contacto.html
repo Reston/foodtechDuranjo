@@ -1,14 +1,16 @@
 {% extends 'homepage/index.html' %}
+{% load url from future %}
+{% load staticfiles %}
 {% block title %}
 Contacto - Duranjo
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/index.css">
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/contacto.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage/contact.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="{{ STATIC_URL }}js/propios/selectable.js"></script>
+<script type="text/javascript" src="{% static 'js/propios/selectable.js' %}"></script>
 {% endblock %}
 {% block contenido %}
 	<section class="fondoContacto">
@@ -30,11 +32,18 @@ Contacto - Duranjo
    		{% endif %}
 		<form action="#" method="POST">
 			{% csrf_token %}
+		<div class="contactoCampos">
 			<div class="campo">
 				{{ field.errors }}
 				<label for="nombre">Nombre:</label>
 				{{ form.nombre }}
 				{{ form.nombre.errors }}
+			</div>
+			<div class="campo">
+				{{ field.errors }}
+				<label for="nombre">Empresa:</label>
+				{{ form.empresa }}
+				{{ form.empresa.errors }}
 			</div>
 			<div class="campo">				
 				{{ field.errors }}
@@ -48,9 +57,10 @@ Contacto - Duranjo
 				{{ form.telefono }}
 				{{ form.telefono.errors }}
 			</div>
+		</div>
 			<div class="textareaDescripcion">
 				{{ field.errors }}
-				<label for="texto">Breve descripción de su proyecto: </label>
+				<label for="texto">Mensaje: </label>
 				{{ form.texto }}
 				{{ form.texto.errors }}
 			</div>
@@ -59,12 +69,13 @@ Contacto - Duranjo
 			</div>
 		</form>
 		{% endif %}
-		<div class="tituloStyle">
+		<!-- <div class="tituloStyle">
 			<h2>Información de contacto</h2>
 			<div class="lineatitulo"></div>
 		</div>	
 		<section class="infoContacto">
 		</section>
+		-->
 	</div>
 	</section>
 	<!-- FACEBOOK SCRIPT -->

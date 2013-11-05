@@ -13,11 +13,11 @@ def index(request):
 def about(request):
 	sobrenosotros = "misión de la empresa"
 	ctx = {'sobrenosotros': sobrenosotros}
-	return render_to_response('homepage/trabajos.html', ctx, context_instance=RequestContext(request))
+	return render_to_response('homepage/quienesomos.html', ctx, context_instance=RequestContext(request))
 
 
 def products(request):
-	return render_to_response('homepage/servicios.html', context_instance=RequestContext(request))
+	return render_to_response('homepage/producto.html', context_instance=RequestContext(request))
 
 
 def contact(request):

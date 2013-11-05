@@ -5,7 +5,7 @@
 <meta name="description" content="">
 {% endblock%}
 {% block title %}
-Foodtech Inicio
+FoodTech Inicio
 {% endblock%}
 {% block css%}
 <link rel="stylesheet" href="{% static 'css/homepage/index.css' %}">
@@ -33,6 +33,7 @@ Foodtech Inicio
 	</section>
 	<section class="ofrecemos">
 		<div class="wrapper">
+			<div class="textoProductos">Con calidad FoodTech</div>
 			<ul class="productos">
 				<li><img src="{% static 'img/circu.png' %}" alt="Carne de res"><span>il lorem ipsum.</span></li>
 				<li><img src="{% static 'img/circu.png' %}" alt="Jamón"><span>il lorem ipsum.</span></li>
@@ -47,8 +48,8 @@ Foodtech Inicio
 		<div class="wrapper">
 			<div class="introEmpresa">
 				<h2><span>FoodTech</span></h2>
-				<p>Natoque odio habitasse, tincidunt, odio pid! Odio cum nec, proin, nec ridiculus, ridiculus egestas mus dis, etiam ridiculus, mid et ultricies vel adipiscing porttitor? Porta</p>
-				<img src="{% static 'img/logo.png' %}" alt="logo de la empresa foodtech" width="150" class="logo">
+				<p>FOODTECH C.A.™ es una empresa de Innovación y Desarrollo de Nuevos Productos, basados en procesos biotecnológicos. Ciencia y Tecnología al servicio de la comunidad.</p>
+				<img src="{% static 'img/logo.png' %}" alt="logo de la empresa foodtech" class="logo">
 			</div>
 			<div class="ultimasNoticias">
 				<h2><span>Últimas noticias</span></h2>
@@ -69,6 +70,7 @@ Foodtech Inicio
 		<div class="wrapper">
 			<h2><span>Nuestros clientes</span></h2>
 			<img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+			<a href="{% url 'homepageabout' %}#clientes" class="verTodosClientes">Ver todos nuestros clientes</a>
 		</div>
 	</section>
 {% endblock%}

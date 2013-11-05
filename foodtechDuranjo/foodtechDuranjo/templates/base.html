@@ -67,23 +67,6 @@
 		{% block footer %}{% endblock%}
 		<div class="wrapper">
 			<ul class="listaPrincipalFooter">
-				<li class="logo">
-					<img class="logoFooter" src="{% static 'img/logo.png' %}" alt="Logo foodtech">
-				</li>
-				<li class="menu1">
-					<ul class="sublistaMenu">
-						<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-						<li class="about"><a href="{% url 'homepageabout' %}">Sobre nosotros</a></li>
-						<ul><li><a href="{% url 'homepageabout' %}#clientes">Nuestros clientes</a></li></ul>
-						<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
-					</ul>
-				</li>
-				<li class="menu2">
-					<ul class="sublistaMenu">
-						<li class="orlando"><a href="{% url 'homepageproduct' %}">Productos</a></li>
-						<li>Blog</li>
-					</ul>
-				</li>
 				<li class="atencionFooter">
 					<div class="horario">
 						<div>
@@ -97,8 +80,27 @@
 						</div>
 					</div>
 				</li>
+				<li class="menu1">
+					<ul class="sublistaMenu">
+						<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+						<li class="aboutFooter"><a href="{% url 'homepageabout' %}">Sobre nosotros</a></li>
+						<ul><li><a href="{% url 'homepageabout' %}#clientes">Nuestros clientes</a></li></ul>
+						<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+					</ul>
+				</li>
+				<li class="menu2">
+					<ul class="sublistaMenu">
+						<li class="orlando"><a href="{% url 'homepageproduct' %}">Productos</a></li>
+						<li>Blog</li>
+					</ul>
+				</li>
+				<li class="logo">
+					<img class="logoFooter" src="{% static 'img/logo.png' %}" alt="Logo foodtech">
+				</li>
 			</ul>
-			<div class="copyRight">Foodtech® Copyright ©. Todos los derechos reservados.</div>
+			<div class="copyRight">Foodtech® Copyright ©. Todos los derechos reservados. 
+				Diseño y Desarrollo: <a href="http://duranjo.com/"><img src="http://duranjo.com/static/img/duranjowhite.png" alt="logo empresa duranjo"></a>
+			</div>
 		</div>
 	</footer>
 	{% block jsinit %}

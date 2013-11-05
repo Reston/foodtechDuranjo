@@ -1,0 +1,62 @@
+@charset 'utf-8';
+
+.tituloStyle{
+	background: url(../../img/fondotitulo.png) no-repeat;
+	width: 334px;
+	height: 84px;
+	text-align: center;
+	line-height: 84px;
+	margin: 0 auto;
+	position: relative;
+	bottom: -40px;
+	font-style: italic;
+	color: #4B2B09;
+}
+.textAbout{
+	background: url(../../img/bedge_grunge_@2X.png);
+	border-radius: 5px;
+	padding: 15px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	font-size: 1.1em;
+	color: #4B2B09;
+	line-height: 2em;
+}
+.nuestrosClientes{
+	margin-bottom: 50px;
+}
+.nuestrosClientes span{
+	text-align: center;
+	border-top: 3px double #4B2B09;
+	border-bottom: 3px double #4B2B09;
+	font-style: italic;
+	color: #4B2B09;
+}
+
+.tituloClientes{
+	text-align: center;
+}
+.nuestrosClientes ul{
+	padding: 15px;
+	margin: 0;
+}
+.nuestrosClientes li{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	margin-bottom: 5px;
+	position: relative;
+}
+.nuestrosClientes li:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -25px;
+	background: url(../../img/banderita.png);
+}
+.restaurantes{
+	text-align: center;
+	font-size: 1.2em;
+	margin: 20px 0;
+}

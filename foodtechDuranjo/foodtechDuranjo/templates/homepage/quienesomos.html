@@ -1,10 +1,12 @@
-{% extends 'homepage/index.html' %}
+{% extends 'base.html' %}
+{% load url from future %}
+{% load staticfiles %}
 {% block title %}
-Trabajos realizados - Duranjo
+Quiénes somos - Foodtech
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/index.css">
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/quienesomos.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage/about.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -12,7 +14,47 @@ Trabajos realizados - Duranjo
 {% block contenido %}
 <section class="quienessomos">
 	<div class="wrapper">
-		<div class="tituloStyle"><h2>¿Quienes somos?</h2></div>
+		<div class="tituloStyle"><h2>¿Quiénes somos?</h2></div>
+		<div class="textAbout">
+			FOODTECH® C.A. fue fundada en 1996 con el objetivo de ser una empresa Innovadora y Desarrolladora de Nuevos Productos de Altísima Calidad utilizando Biotecnología. Nos enfocamos en la excelencia de procesos y atención al cliente. Somos Lider en Carnes Maduradas a nivel Nacional.
+		</div>
+		<div class="productosLista"></div>
+		<div id="clientes" class="nuestrosClientes">
+			<h2 class="tituloClientes"><span>Nuestros clientes</span></h2>
+			<ul>
+				<li>Practico Grill
+				<li>Mercapollo (Santa Rita) (Los Olivos) 
+				<li>Full de Todo
+				<li>Charcutería Fina
+				<li>Grupo Pollo Express
+				<li>Delicarnes
+				<li>Parrillero Express
+				<li>Frigorífico Miraflores
+				<li>Parrilla To Go
+				<li>Toi Todo
+				<li>Charcutería Delicias del Campo
+				<li>COFICA
+				<li>EnnE
+				<li>…Y Delicateses Santa Rita De Candido
+				<li>Inversiones 24-25
+				<li>Consultora Coral
+				<li>Mega 72
+			</ul>
+			<div class="restaurantes">Restaurantes</div>
+			<ul>
+				<li>Picanha Grill
+				<li>Asaos Grill
+				<li>Bacar Grill
+				<li>El Gaucho
+				<li>Albahaca
+				<li>Braserias
+				<li>Te con Te
+				<li>Lago Maracaibo Club
+				<li>Club Nautico
+				<li>Casa D’Italia
+				<li>Subway (Maracaibo)
+			</ul>
+		</div>
 	</div>
 </section>
 {% endblock%}

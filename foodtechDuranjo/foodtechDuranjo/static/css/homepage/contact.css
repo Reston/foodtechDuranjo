@@ -18,6 +18,8 @@ form{
 	margin: 0 auto;
 	position: relative;
 	bottom: -40px;
+	font-style: italic;
+	color: #4B2B09;
 }
 input, textarea{
 	background: #FBF5E0;

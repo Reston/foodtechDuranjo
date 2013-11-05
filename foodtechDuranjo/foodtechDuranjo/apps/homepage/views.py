@@ -4,10 +4,14 @@ from django.shortcuts import render_to_response
 from foodtechDuranjo.apps.homepage.forms import *
 from django.template import RequestContext
 from django.core.mail import send_mail
+from blogango.models import BlogEntry
 
 
 def index(request):
-	return render_to_response('homepage/index.html', context_instance=RequestContext(request))
+	entradas = BlogEntry.objects.order_by('-created_on')
+	entradas= entradas[:2]
+	ctx = {'entradas':entradas}
+	return render_to_response('homepage/index.html',ctx, context_instance=RequestContext(request))
 
 
 def about(request):

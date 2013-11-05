@@ -53,16 +53,15 @@ FoodTech Inicio
 			</div>
 			<div class="ultimasNoticias">
 				<h2><span>Últimas noticias</span></h2>
+				{% for noticia in entradas %}
 				<article class="noticia">
+					<a href="{{ noticia.get_absolute_url }}" class="linknoticia">
 					<img src="{% static 'img/img1.jpg' %}" alt="foto noticia foodtech">
-					<h3>Il lorem ipsum.</h3>
-					<p>Natoque odio habitasse, tincidunt, odio pid! Odio cum nec, proin, nec ridiculus, ridiculus egestas mus dis, etiam ridiculus, mid et ultricies.</p>
+					<h3>{{ noticia.title }}</h3>
+					<p>{{ noticia.summary }}</p>
+				</a>
 				</article>
-				<article class="noticia">
-					<img src="{% static 'img/img1.jpg' %}" alt="foto noticia foodtech">
-					<h3>Il lorem ipsum.</h3>
-					<p>Natoque odio habitasse, tincidunt, odio pid! Odio cum nec, proin, nec ridiculus, ridiculus egestas mus dis, etiam ridiculus, mid et ultricies.</p>
-				</article>
+				{% endfor %}
 			</div>
 		</div>
 	</section>

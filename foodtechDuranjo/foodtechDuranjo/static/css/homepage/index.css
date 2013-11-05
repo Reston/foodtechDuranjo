@@ -71,10 +71,15 @@ h2{
 .ultimasNoticias .noticia{
 	width: 45%;
 	display: inline-block;	
+	vertical-align: top;
 }
 .noticia img{
 	width: 95%;
 	border: 5px solid gold;
+}
+.linknoticia{
+	text-decoration: none;
+	color: #000;
 }
 .noticia p{
 	text-align: justify;

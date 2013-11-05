@@ -1,0 +1,35 @@
+{% extends 'blogango/base.html' %}
+
+{% block breadcrumbs %}
+	<li>Blog</li>
+{% endblock %}
+
+{% block content%}
+
+<!--BLOG POST STARTS-->
+{% for entry in entries %}
+    {% include 'blogango/entry_snippets.html' %}
+{% empty %}
+    <div class="leftblock"> 
+        <h1>No hay publicaciones</h1> 
+        <div class="postcontent">
+        </div>
+    </div>
+{% endfor %}  
+<!--BLOG POST ENDS-->
+<div class="clear"></div>
+{% if page_.has_next or page_.has_previous %}
+<div class="pagination"> 
+    <div class="moreinfo">
+        {% if page_.has_next %}
+            <a href='{% url "blogango_page" page_.next_page_number %}'>&laquo; Publicaciones Anteriores</a>
+        {% endif %}
+        
+        {% if page_.has_previous %}
+            <span class='right'><a href='{% url "blogango_page" page_.previous_page_number %}'>Siguientes Publicaciones &raquo;</a></span>
+        {% endif %}
+    </div> 
+</div>
+{% endif %}
+
+{% endblock %}

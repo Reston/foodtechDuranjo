@@ -133,6 +133,12 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'foodtechDuranjo.apps.homepage',
+    'blogango',
+    'pingback',
+    'taggit',
+    'django.contrib.sitemaps',
+    'django_xmlrpc',
+    'google_analytics',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -172,7 +178,6 @@ TEMPLATE_CONTEXT_PROCESSOR = (
     'django.core.context_processors.csrf',
     'django.core.context_processors.static',
 )
-
 
 #Configuraciones para enviar mensajes usando gmail
 EMAIL_USE_TLS = True

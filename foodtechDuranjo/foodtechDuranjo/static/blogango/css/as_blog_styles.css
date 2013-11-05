@@ -30,7 +30,16 @@ blockquote, q {
 }
 .clear{clear:both;}
 
-
+.tituloStyle {
+	background: url(../../img/fondotitulo.png) no-repeat;
+	width: 334px;
+	height: 87px;
+	text-align: center;
+	line-height: 84px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 15px;
+}
 /**************************************/
 /*             CONTAINERS             */
 /**************************************/

@@ -1,16 +1,18 @@
-{% extends 'homepage/index.html' %}
+{% extends 'base.html' %}
+{% load url from future %}
+{% load staticfiles %}
 {% block title %}
-Trabajos realizados - Duranjo
+Categorias de productos - Foodtech
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/index.css">
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/seccionlibre.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/productos/producto.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 {% endblock %}
 {% block contenido %}
-<section class="quienessomos">
+<section class="producto">
 	<div class="wrapper">
 		<div class="tituloStyle"><h2>libre</h2></div>
 	</div>

@@ -19,11 +19,6 @@ def about(request):
 	ctx = {'sobrenosotros': sobrenosotros}
 	return render_to_response('homepage/quienesomos.html', ctx, context_instance=RequestContext(request))
 
-
-def products(request):
-	return render_to_response('homepage/producto.html', context_instance=RequestContext(request))
-
-
 def contact(request):
 	success = False
 	if request.method == 'POST':

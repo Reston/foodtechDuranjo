@@ -63,28 +63,31 @@ html, body{
 .about{
 	margin-right: 220px;
 }
-.barraNavegacion:before, .barraNavegacion:after{
-	background: url(../img/picos.png) no-repeat;
-}
 .barraNavegacion:before{
 	content: "";
 	position: absolute;
-	top: 7px;
+	top: 6px;
 	left: 106ex;
 	display: block;
-	width: 25px;
+	width: 31px;
 	height: 75px;
+	background: url(../img/ladoder.png) no-repeat;
 }
 .barraNavegacion:after{
 	content: "";
 	position: absolute;
 	top: 7px;
-	left: 3ex;
+	left: 13px;
 	display: block;
-	width: 25px;
-	height: 75px;	
+	width: 30px;
+	height: 75px;
+	background: url(../img/ladoizq.png) no-repeat;	
 }
 /* FOOTER */
+.puasMarron{
+	background: url(../img/cachito2.png) repeat-x;
+	height: 11px;
+}
 footer{
 	background: #4B2B09;
 	color: white;

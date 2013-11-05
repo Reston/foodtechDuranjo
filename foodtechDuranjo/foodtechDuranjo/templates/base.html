@@ -53,7 +53,7 @@
 				<ul>
 					<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
 					<li class="about"><a href="{% url 'homepageabout' %}">Sobre nosotros</a></li>
-					<li class="products"><a href="{% url 'homepageproduct' %}">Productos</a></li>
+					<li class="products"><a href="{% url 'productocategoria' %}">Productos</a></li>
 					<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
 				</ul>
 			</nav>
@@ -63,6 +63,7 @@
 		{% block contenido %} {% endblock%}
 	</section>
 	{% block clear %} {% endblock %}
+	<div class="puasMarron"></div>
 	<footer>
 		{% block footer %}{% endblock%}
 		<div class="wrapper">
@@ -90,8 +91,13 @@
 				</li>
 				<li class="menu2">
 					<ul class="sublistaMenu">
+<<<<<<< HEAD
 						<li class="orlando"><a href="{% url 'homepageproduct' %}">Productos</a></li>
 						<li><a href="/blog">Blog</a></li>
+=======
+						<li class="orlando"><a href="{% url 'productocategoria' %}">Productos</a></li>
+						<li>Blog</li>
+>>>>>>> backend productos y algunas arreglos al diseño
 					</ul>
 				</li>
 				<li class="logo">

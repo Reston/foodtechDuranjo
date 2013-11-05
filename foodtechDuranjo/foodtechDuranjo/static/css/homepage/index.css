@@ -15,8 +15,12 @@ h2{
 }
 
 /* PRODUCTOS OFRECIDOS LINEA VERDE*/
+.puasVerde{
+	background: url(../../img/cachito1.png) repeat-x;
+	height: 13px;
+}
 .ofrecemos{
-	background: green;
+	background: url(../../img/texturaverde.png);
 }
 .textoProductos{
 	font-size: 2.5em;
@@ -31,6 +35,9 @@ h2{
 .productos li{
 	display: inline-block;
 	width: 16%;
+}
+.productos li > img{
+	width: 100%;
 }
 .productos span{
 	display: block;

@@ -47,6 +47,12 @@ Contacto - Duranjo
 			</div>
 			<div class="campo">				
 				{{ field.errors }}
+				<label for="referente">Referente a:</label>
+				{{ form.referente }}
+				{{ form.referente.errors }}
+			</div>
+			<div class="campo">
+				{{ field.errors }}
 				<label for="email">Correo Electrónico:</label>
 				{{ form.email }}
 				{{ form.email.errors }}

@@ -6,6 +6,9 @@ from django import forms
 class contactForm(forms.Form):
 	nombre = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su nombre'}))
 	empresa = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Razón Social'}))
+	SERVICIOS = (('', '------------'), ('reclamos', 'Reclamos',), ('envioLista', 'Envío de lista de precios',), ('visitaRepresentan', 'Visita representante de ventas',),
+				('servicio', 'Servicio',), ('otros', 'Otros',))
+	referente = forms.ChoiceField(label="Referente a", choices=SERVICIOS, widget=forms.Select(attrs={'class': 'selector'}))
 	email = forms.EmailField(widget=forms.TextInput(attrs={'placeholder': ' nick@email.com'}))
 	telefono = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su Número de teléfono'}))
 	texto = forms.CharField(widget=forms.Textarea)

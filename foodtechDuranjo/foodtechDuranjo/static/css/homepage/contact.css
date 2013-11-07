@@ -43,9 +43,16 @@ input, textarea{
 	height: 33px;
 	width: 84%;
 }
+select{
+	background: #FBF5E0;
+	height: 33px;
+	width: 84%;
+	border: 1px solid #CCC;
+}
 textarea{
 	border: 1px solid #CCC;
 	width: 84%;
+	height: 300px;
 }
 .botonEnviar{
 	text-align: right;

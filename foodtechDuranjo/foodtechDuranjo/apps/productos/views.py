@@ -2,17 +2,16 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from foodtechDuranjo.apps.productos.models import Categoria, Producto, ImgProductos
+from foodtechDuranjo.apps.productos.models import *
 from django.shortcuts import get_object_or_404
 
 
 def producto(request, titulo):
-	servicio = False
 	titulo = titulo.replace('_', ' ')
 	categoria = get_object_or_404(Categoria, titulo=titulo)
-	productos = Producto.objects.filter(categoria=categoria.pk)
+	productos = Producto.objects.filter(categoria_id=categoria.pk)
 	imagenes = ImgProductos.objects.filter(producto__in=list(productos))
-	ctx = {'producto': producto, 'imagenes': imagenes, 'servicio': servicio}
+	ctx = {'producto': productos, 'imagenes': imagenes}
 	return render_to_response('productos/producto.html', ctx, context_instance=RequestContext(request))
 
 

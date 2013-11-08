@@ -100,3 +100,14 @@ h2{
 	color: #4B2B09;
 	font-style: italic;
 }
+.imagesLogos{
+	overflow: hidden;
+}
+.verTodosClientes{
+	background: #008000;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #FFF;
+	box-shadow: 0 0 3px #000;
+	text-shadow: 1px 1px 1px #000;
+}

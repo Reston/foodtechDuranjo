@@ -10,10 +10,12 @@ FoodTech Inicio
 {% block css%}
 <link rel="stylesheet" href="{% static 'css/homepage/index.css' %}">
 <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery.simplyscroll.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="{% static 'js/adquiridos/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'js/adquiridos/jquery.imageScroller.js' %}"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
 {% endblock %}
 {% block clear %}{% endblock%}
@@ -69,18 +71,31 @@ FoodTech Inicio
 	<section class="infoCliente">
 		<div class="wrapper">
 			<h2><span>Nuestros clientes</span></h2>
-			<img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+			<!-- <div class="sliderLogos">
+				<ul class="slides">
+					<li><img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+					<li><img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+				</ul>
+			</div> -->
+			<div id="imageLogos" class="imagesLogos">
+				<img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+				<img src="{% static 'img/icnonos.png' %}" alt="clientes de foodtech">
+			</div>
 			<a href="{% url 'homepageabout' %}#clientes" class="verTodosClientes">Ver todos nuestros clientes</a>
 		</div>
 	</section>
 {% endblock%}
 {% block jsinit %}
-<!-- SLIDER INIT -->
+<!-- SLIDER INITS -->
 	<script>
 			$(document).ready(function() {
 			  $('.flexslider').flexslider({
 			  	//animation: "slide" si las imagenes son diferente tamaño poner sin slide
 			  });
+			  $( "#imageLogos" ).imageScroller({
+					speed:'9000',
+					loading:'Wait please...'
+				});
 			});
 	</script>
 	<!-- Google+ SCRIPT --> 

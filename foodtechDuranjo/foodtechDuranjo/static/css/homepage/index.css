@@ -37,7 +37,11 @@ h2{
 	width: 16%;
 }
 .productos li > img{
-	width: 100%;
+	max-width: 90%;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+	border: 6px solid #A39421;
 }
 .productos span{
 	display: block;

@@ -93,6 +93,9 @@ h2{
 }
 
 /* Clientes lista*/
+.infoCliente{
+	margin-bottom: 45px;
+}
 .infoCliente h2 span{
 	text-align: center;
 	border-top: 3px double #4B2B09;
@@ -103,6 +106,9 @@ h2{
 .imagesLogos{
 	overflow: hidden;
 }
+.infoCliente .wrapper{
+	text-align: right;
+}
 .verTodosClientes{
 	background: #008000;
 	padding: 5px 10px;
@@ -110,4 +116,5 @@ h2{
 	color: #FFF;
 	box-shadow: 0 0 3px #000;
 	text-shadow: 1px 1px 1px #000;
+	display: inline-block;
 }

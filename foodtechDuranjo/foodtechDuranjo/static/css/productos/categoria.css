@@ -36,7 +36,13 @@ h3{
 	text-decoration: none;
 }
 .lineaProducto a > img{
-	width: 100%;
+	width: 290px;
+	height: 290px;
+	max-width: 100%;
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+	border: 15px solid #FFF;
 }
 .lineaProducto .verProductoBoton span{
 	background: green; /* Cambiar al fondo con rayitas*/

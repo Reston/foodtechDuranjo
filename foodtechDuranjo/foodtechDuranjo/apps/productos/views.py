@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from foodtechDuranjo.apps.productos.models import *
+from foodtechDuranjo.apps.productos.models import Categoria, Producto, ImgProductos
 from django.shortcuts import get_object_or_404
 
 

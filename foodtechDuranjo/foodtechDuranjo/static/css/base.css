@@ -137,6 +137,15 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 }
 .horario{
 	padding: 0 15px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.horario p{
+	margin: 0;
+	font-size: 16px;
+}
+.telefonos{
+	font-size: 16px;
 }
 .copyRight{
 	text-align: center;

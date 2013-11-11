@@ -8,6 +8,7 @@ form{
 	padding: 15px;
 	padding-top: 50px;
 	margin-bottom: 50px;
+	border: 1px solid #A3A3A3;
 }
 .tituloStyle{
 	background: url(../../img/fondotitulo.png) no-repeat;

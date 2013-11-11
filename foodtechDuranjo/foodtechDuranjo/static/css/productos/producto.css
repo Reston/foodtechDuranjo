@@ -50,6 +50,7 @@
 	margin-left: 27px;
 	border-radius: 12px;
 	background: url(../../img/bedge_grunge_@2X.png);
+	border: 1px solid #A3A3A3;
 }
 .maintext{
 	padding: 16px;

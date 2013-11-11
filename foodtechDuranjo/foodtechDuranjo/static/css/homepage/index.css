@@ -59,6 +59,7 @@ h2{
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
+	border: 1px solid #A3A3A3;
 }
 .introEmpresa  span, .ultimasNoticias  span{
 	text-align: center;

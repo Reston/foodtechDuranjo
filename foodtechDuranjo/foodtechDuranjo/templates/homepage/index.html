@@ -59,12 +59,13 @@ FoodTech Inicio
 				{% for noticia in entradas %}
 				<article class="noticia">
 					<a href="{{ noticia.get_absolute_url }}" class="linknoticia">
-					<img src="{% static 'img/img1.jpg' %}" alt="foto noticia foodtech">
 					<h3>{{ noticia.title }}</h3>
-					<p>{{ noticia.summary }}</p>
+					<div class="fecha">{{ noticia.created_on }}</div>
+					<p>{{ noticia.summary }}...</p>
 				</a>
 				</article>
 				{% endfor %}
+				<a href="/blog" class="verTodosClientes">Ver todas las noticias</a>
 			</div>
 		</div>
 	</section>

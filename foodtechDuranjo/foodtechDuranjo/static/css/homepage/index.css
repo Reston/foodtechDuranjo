@@ -68,33 +68,54 @@ h2{
 	color: #4B2B09;
 }
 .introEmpresa{
-	width: 29%;
+	width: 55%;
 	margin-right: 2%;
 }
 .introEmpresa p{
 	text-align: justify;
+	padding: 0 11% 0 11%;
+	font-size: 1.1em;
+	color: #4B2B09;
 }
 .introEmpresa > img{
 	width: 150px;
+	margin-bottom: 27px;
 }
 .ultimasNoticias{
-	width: 65%;
+	width: 40%;
 }
 .ultimasNoticias .noticia{
-	width: 45%;
+	width: 100%;
 	display: inline-block;	
 	vertical-align: top;
+	text-align: left;
+	margin-left: 31px;
+	margin-top: -18px;
 }
 .noticia img{
 	width: 95%;
 	border: 5px solid gold;
 }
+.noticia .fecha{
+	font-size: 0.9em;
+}
 .linknoticia{
 	text-decoration: none;
 	color: #000;
 }
+article .verTodosClientes{
+	float: right;
+}
+.linknoticia h3{
+	height: 5px;
+	height: 19px;
+	margin-bottom: 2px;
+	color: #1D6334;
+	overflow: hidden;
+}
 .noticia p{
 	text-align: justify;
+	margin-top: 10px;
 }
 
 /* Clientes lista*/
@@ -115,6 +136,7 @@ h2{
 	text-align: right;
 }
 .verTodosClientes{
+	float: right;
 	background: #008000;
 	padding: 5px 10px;
 	text-decoration: none;

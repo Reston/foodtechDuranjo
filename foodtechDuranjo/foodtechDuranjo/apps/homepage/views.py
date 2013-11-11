@@ -9,7 +9,9 @@ from blogango.models import BlogEntry
 
 def index(request):
 	entradas = BlogEntry.objects.order_by('-created_on')
-	entradas= entradas[:2]
+	entradas= entradas[:3]
+	for ent in entradas: 
+		ent.summary =  ent.summary[:40]
 	ctx = {'entradas':entradas}
 	return render_to_response('homepage/index.html',ctx, context_instance=RequestContext(request))
 

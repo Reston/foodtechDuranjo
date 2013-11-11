@@ -56,10 +56,14 @@
 	line-height: 30px;
 	text-align: justify;
 	height: 280px;
+	font-size: 1.1em;
+	color: #4B2B09;
 }
 .relleno{
 	text-align: center;
 	font-weight: bold;
+	font-size: 1.1em;
+	color: #4B2B09;
 }
 .likclientes{
 	display: block;

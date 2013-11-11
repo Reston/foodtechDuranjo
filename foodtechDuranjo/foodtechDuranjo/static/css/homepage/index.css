@@ -55,7 +55,7 @@ h2{
 .introEmpresa, .ultimasNoticias{
 	background: url(../../img/bedge_grunge_@2X.png);
 	border-radius: 5px;
-	padding: 5px;
+	padding: 5px 20px;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
@@ -78,7 +78,7 @@ h2{
 	width: 150px;
 }
 .ultimasNoticias{
-	width: 65%;
+	width: 60%;
 }
 .ultimasNoticias .noticia{
 	width: 45%;

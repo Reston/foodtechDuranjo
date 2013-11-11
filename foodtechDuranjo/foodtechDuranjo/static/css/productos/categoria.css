@@ -1,4 +1,7 @@
 @charset 'utf-8';
+h2{
+	margin: 0;
+}
 h3{
 	color: #4B2B09;
 	text-align: center;
@@ -46,7 +49,10 @@ h3{
 	border: 15px solid #FFF;
 }
 .lineaProducto .verProductoBoton span{
-	background: green; /* Cambiar al fondo con rayitas*/
-	color: white;
-	padding: 5px;
+	background: url(../../img/verde.png);
+	color: #FFF;
+	padding: 9px 18px;
+}
+.listaProductos{
+	margin-bottom: 30px;
 }

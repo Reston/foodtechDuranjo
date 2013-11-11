@@ -96,7 +96,7 @@ footer{
 	color: white;
 }
 footer > .wrapper > .listaPrincipalFooter{
-	padding: 0;
+	padding: 30px 0 0 0;
 	margin: 0;
 }
 footer > .wrapper > .listaPrincipalFooter > li{
@@ -136,7 +136,7 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 	margin: 0 auto;
 }
 .horario{
-	padding: 15px;
+	padding: 0 15px;
 }
 .copyRight{
 	text-align: center;

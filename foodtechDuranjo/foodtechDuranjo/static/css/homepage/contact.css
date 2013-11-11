@@ -28,7 +28,9 @@ input, textarea{
 .contactoCampos, .textareaDescripcion{
 	display: inline-block;
 	vertical-align: top;
-	width: 49%;
+	width: 43%;
+	margin-left: 6%;
+	margin-top: 3%;
 }
 .campo{
 	margin: 0 auto 10px auto;
@@ -42,6 +44,11 @@ input, textarea{
 	text-indent: 5px;
 	height: 33px;
 	width: 84%;
+}
+.textareaDescripcion label{
+	float: left;
+	width: 350px;
+	margin-bottom: 3px;
 }
 select{
 	background: #FBF5E0;

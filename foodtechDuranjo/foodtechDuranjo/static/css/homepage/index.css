@@ -147,3 +147,22 @@ article .verTodosClientes{
 	text-shadow: 1px 1px 1px #000;
 	display: inline-block;
 }
+@media screen and (max-width: 1000px){
+	.productos{
+		text-align: center;
+	}
+	.productos li{
+		width: auto;
+	}
+	.introEmpresa {
+		width: auto;
+		margin: 0 15px 10px 15px;
+	}
+	.ultimasNoticias{
+		width: auto;
+		margin: 0 15px;
+	}
+	.ultimasNoticias .noticia{
+		margin-left: 5px;
+	}
+}

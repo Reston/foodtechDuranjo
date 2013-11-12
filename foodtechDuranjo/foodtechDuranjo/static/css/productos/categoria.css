@@ -56,3 +56,13 @@ h3{
 .listaProductos{
 	margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1000px){
+	.listaProductos {
+		text-align: center;
+	}
+	.lineaProducto{
+		width: auto;
+		margin-bottom: 15px;
+	}
+}

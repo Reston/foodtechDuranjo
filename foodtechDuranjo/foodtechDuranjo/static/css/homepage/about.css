@@ -61,3 +61,12 @@
 	font-size: 1.2em;
 	margin: 20px 0;
 }
+@media screen and (max-width: 1000px){
+	.nuestrosClientes ul {
+		padding-left: 40px;
+	}
+	.nuestrosClientes li {
+		width: auto;
+		display: list-item;
+	}
+}

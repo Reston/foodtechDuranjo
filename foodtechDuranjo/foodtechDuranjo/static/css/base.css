@@ -22,8 +22,27 @@ html, body{
 	border-radius: 5px;
 	padding: 5px;
 }
+.rif{
+	position: relative;
+}
 .rifEmpresa{
 	text-align: right;
+}
+.facebook, .twitter{
+	background: url(../img/sn.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+.facebook{
+	background-position: 0 0;
+	top: 39px;
+	right: 70px;
+}
+.twitter{
+	background-position: -50px 0;
+	top: 39px;
+	right: 15px;
 }
 .logoEmpresa{
 	position: relative;
@@ -86,7 +105,7 @@ html, body{
 	height: 75px;
 	background: url(../img/ladoizq.png) no-repeat;	
 }
-/* FOOTER */
+/* ===================== FOOTER ======================== */
 .puasMarron{
 	background: url(../img/cachito2.png) repeat-x;
 	height: 11px;
@@ -103,6 +122,18 @@ footer > .wrapper > .listaPrincipalFooter > li{
 	display: inline-block;
 	vertical-align: top;
 	width: 24%;
+}
+.twitterlogo, .facebooklogo{
+	background: url(../img/footersn.png) no-repeat;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+.twitterlogo{
+	background-position: -32px 0;
+}
+.facebooklogo{
+	background-position: 0 0;
 }
 .logoFooter{
 	width: 150px;

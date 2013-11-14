@@ -1,11 +1,18 @@
 @charset 'utf-8';
+@font-face {
+	font-family: 'sertig';
+	src:url(../fonts/sertig.otf);
+}
 /* SLIDER BANNER INICIO */
 h1{
 	margin: 0;
 	padding: 18px;
 	text-align: center;
 	background: white;
-	font-size: 2em;
+	font-size: 3em;
+	font-family: 'sertig';
+	font-style: italic;
+	color: #4B2B09;
 }
 h2{
 	text-align: center;
@@ -23,10 +30,13 @@ h2{
 	background: url(../../img/texturaverde.png);
 }
 .textoProductos{
-	font-size: 2.5em;
+	font-size: 2em;
 	color: #FFF;
 	text-align: center;
 	padding-top: 20px;
+	font-family: serif;
+	font-weight: bold;
+	font-style: italic;
 }
 .productos{
 	margin: 31px 0 31px 0;

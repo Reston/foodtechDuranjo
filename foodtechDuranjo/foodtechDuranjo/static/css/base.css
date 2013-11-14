@@ -96,7 +96,7 @@ footer{
 	color: white;
 }
 footer > .wrapper > .listaPrincipalFooter{
-	padding: 0;
+	padding: 30px 0 0 0;
 	margin: 0;
 }
 footer > .wrapper > .listaPrincipalFooter > li{
@@ -136,7 +136,16 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 	margin: 0 auto;
 }
 .horario{
-	padding: 15px;
+	padding: 0 15px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.horario p{
+	margin: 0;
+	font-size: 16px;
+}
+.telefonos{
+	font-size: 16px;
 }
 .copyRight{
 	text-align: center;
@@ -200,7 +209,50 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 	background-color: #777;
 }
 @media screen and (max-width: 1000px){
-
+	.wrapper{
+		width: 100%;
+	}
+	.logoEmpresa a {
+		position: static;
+		z-index: 10;
+	}
+	.logoMenu{
+		display: block;
+		margin: 0 auto;
+	}
+	.about {
+		margin-right: 0;
+	}
+	.barraNavegacion{
+		background: url(../img/menufondo.png) repeat-x center;
+		margin-top: 0;
+	}
+	.barraNavegacion a{
+		margin: 30px 8px;
+	}
+	.barraNavegacion:before{
+		content: "";
+		position: absolute;
+		top: 4px;
+		left: 106ex;
+		display: block;
+		width: 31px;
+		height: 75px;
+		background: none;
+	}
+	.barraNavegacion:after{
+		content: "";
+		position: absolute;
+		top: 5px;
+		left: 13px;
+		display: block;
+		width: 30px;
+		height: 75px;
+		background: none;	
+	}
+	.barraNavegacion ul{
+		margin: 0;
+	}
 	/* configuración back-to-top responsive */
 	.back-top a{
 		width: 60px;
@@ -219,4 +271,31 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 	}
 	/* END CONFIG back-to-top */
 
+}
+@media screen and (max-width: 500px) {
+	.barraNavegacion{
+		background: #008000;
+	}
+	.barraNavegacion ul{
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+	.barraNavegacion li {
+		width: 50%;
+		float: left;
+		position: relative;
+		background: green;
+	}
+	.clear{
+		clear: both;
+	}
+	footer > .wrapper > .listaPrincipalFooter > li {
+		display: block;
+		width: auto;
+	}
+	.sublistaMenu > li {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
 }

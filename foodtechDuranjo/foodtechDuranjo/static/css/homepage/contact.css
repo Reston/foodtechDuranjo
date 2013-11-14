@@ -71,3 +71,8 @@ input[type="submit"]{
 	padding: 10px 25px;
 	color: #FFF;
 }
+@media screen and (max-width: 500px) {
+	.contactoCampos, .textareaDescripcion {
+		width: 100%;
+	}
+}

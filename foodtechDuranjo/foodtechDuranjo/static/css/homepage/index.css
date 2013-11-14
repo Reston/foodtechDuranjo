@@ -47,6 +47,7 @@ h2{
 	display: block;
 	text-align: center;
 	color: wheat;
+	font-size: 18px;
 }
 /* About US noticias y intro*/
 .aboutus{
@@ -148,4 +149,23 @@ article .verTodosClientes{
 	box-shadow: 0 0 3px #000;
 	text-shadow: 1px 1px 1px #000;
 	display: inline-block;
+}
+@media screen and (max-width: 1000px){
+	.productos{
+		text-align: center;
+	}
+	.productos li{
+		width: auto;
+	}
+	.introEmpresa {
+		width: auto;
+		margin: 0 15px 10px 15px;
+	}
+	.ultimasNoticias{
+		width: auto;
+		margin: 0 15px;
+	}
+	.ultimasNoticias .noticia{
+		margin-left: 5px;
+	}
 }

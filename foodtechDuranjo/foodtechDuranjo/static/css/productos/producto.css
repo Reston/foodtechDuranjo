@@ -73,3 +73,29 @@
 	color: #1D6334;
 	font-weight: bold;
 }
+
+.abajoimg{
+	position: relative;
+	margin-bottom: -15px;
+	z-index: -1;
+}
+@media screen and (max-width: 1000px){
+	.izquierda {
+		width: 85%;
+		margin-left: 6%;
+	}
+	.maintext {
+		height: auto;
+		padding: 10%;
+	}
+	.derecha {
+		width: 83%;
+		height: auto;
+		margin-bottom: 15px;
+		padding: 4%;
+		margin-left: 2%;
+	}
+	.abajoimg{
+		display: none;
+	}
+}

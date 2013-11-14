@@ -18,7 +18,7 @@ Categorias de productos - Foodtech
 		<div class="textAbout">
 			FOODTECH® C.A. fue fundada en 1996 con el objetivo de ser una empresa Innovadora y Desarrolladora de Nuevos Productos de Altísima Calidad utilizando Biotecnología. Nos enfocamos en la excelencia de procesos y atención al cliente.
 		</div>
-		<div class="listaProductos">
+		<div id="productos" class="listaProductos">
 			{% for cat in lista_categorias %}
 				<div class="lineaProducto">
 					<a href="{{cat.get_absolute_url}}">

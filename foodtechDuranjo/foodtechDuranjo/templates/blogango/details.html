@@ -21,7 +21,7 @@
 {% comment %}
 <div class="comment_block">
   <div class="left_panel">
-    <div class="frame_bg"><img src="{{ STATIC_URL }}blogango/images/person_img.jpg" width="71" height="72" alt="shabda" /></div>
+    <div class="frame_bg"><img src="{% static 'img/noticia.png' %}" width="71" height="72" alt="FOODTECH" /></div>
     <div class="italics">{{ entry.created_on|date:'jS N, Y' }}</div>
     <div class="comment_bg"><a href="{{ entry.get_absolute_url }}#comments">{{ entry.get_num_comments }}</a></div>
     <div class="italics">Comentarios</div>

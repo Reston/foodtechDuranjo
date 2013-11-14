@@ -1,12 +1,9 @@
 {% load blogango_filters %}
+{% load staticfiles %}
 <div class="comment_block">
   <div class="left_panel">
     <div class="frame_bg">
-        {% if entry.created_by.teammember.photo %}
-            <img src="{{ entry.created_by.teammember.photo.url }}" width="71" height="72" alt="{{ entry.created_by }}" />
-        {% else %}
-            <img src="{{ STATIC_URL }}blogango/images/person_default.jpg" width="71" height="72" alt="{{ entry.created_by }}" />
-        {% endif %}
+            <img src="{% static 'img/noticia.png' %}" width="71" height="72" alt="{{ entry.created_by }}" />
     </div>
     <div class="italics">
 	  <a href='{% url "blogango_archives" entry.created_on.year entry.created_on|date:"b" %}'>

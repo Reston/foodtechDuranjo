@@ -20,7 +20,91 @@ h2{
 .flexslider{
 	border: 22px solid #FFF;
 }
-
+.b1m1{
+	position: absolute;
+	top: 35px;
+	left: 12px;
+	background-color: #FFF;
+	padding: 9px;
+	font-size: 1.8em;
+	font-family: 'sertig';
+	font-style: italic;
+	color: #4B2B09;
+	opacity: 0.7;
+	font-weight: bold;
+}
+.b1m2{
+	position: absolute;
+	top: 90px;
+	left: 67px;
+	background-color: #FFF;
+	padding: 5px;
+	font-size: 1.8em;
+	font-family: 'sertig';
+	color: #4B2B09;
+	opacity: 0.7;
+}
+ .b2msj3{
+ 	position: absolute;
+	top: 132px;
+	right: 24px;
+	background-color: #FFF;
+	padding: 5px;
+	font-size: 1.8em;
+	font-family: 'sertig';
+	color: #4B2B09;
+	opacity: 0.7;
+ }
+.b2msj1, .b2msj2{
+	position: absolute;
+	font-size: 2.2em;
+	font-family: 'sertig';
+	color: #4B2B09;
+	font-style: italic;
+	font-weight: bold;
+}
+.b2msj1{
+	top: 49px;
+	right: 24px;
+}
+.b2msj2{
+	top: 90px;
+	right: 12px;
+}
+.b3m1{
+	width: 130px;
+	position: absolute;
+	top: 35px;
+	left: 44px;
+	line-height: 43px;
+	text-align: center;
+	font-size: 1.8em;
+	font-family: 'sertig';
+	color: #FFF;
+}
+.b3m2{
+	position: absolute;
+	top: 30px;
+	right: 74px;
+	font-size: 1.8em;
+	font-family: 'sertig';
+	color: #FFF;
+	font-style: italic;
+	font-weight: bold;
+}
+.tituloempaque1, .tituloempaque2{
+	position: absolute;
+	right: 22px;
+	font-size: 1.8em;
+	font-family: 'sertig';
+	color: #4B2B09;
+}
+.tituloempaque1{
+	top: 15px;
+}
+.tituloempaque2{
+	top: 258px;
+}
 /* PRODUCTOS OFRECIDOS LINEA VERDE*/
 .puasVerde{
 	background: url(../../img/cachito1.png) repeat-x;
@@ -177,5 +261,8 @@ article .verTodosClientes{
 	}
 	.ultimasNoticias .noticia{
 		margin-left: 5px;
+	}
+	.bannermensaje{
+		display: none;
 	}
 }

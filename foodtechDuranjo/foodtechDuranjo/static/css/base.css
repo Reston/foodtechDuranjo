@@ -85,21 +85,11 @@ html, body{
 .about{
 	margin-right: 220px;
 }
-.barraNavegacion:before{
-	content: "";
-	position: absolute;
-	top: 4px;
-	left: 106ex;
-	display: block;
-	width: 31px;
-	height: 75px;
-	background: url(../img/ladoder.png) no-repeat;
-}
-.barraNavegacion:after{
+.barraNavegacion::after{
 	content: "";
 	position: absolute;
 	top: 5px;
-	left: 13px;
+	left: -4px;
 	display: block;
 	width: 30px;
 	height: 75px;
@@ -255,31 +245,15 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 		margin-right: 0;
 	}
 	.barraNavegacion{
-		background: url(../img/menufondo.png) repeat-x center;
+		background: url(../img/menufondo.png) no-repeat right;
 		margin-top: 0;
+		margin-left: 3%;
 	}
 	.barraNavegacion a{
 		margin: 30px 8px;
 	}
-	.barraNavegacion:before{
-		content: "";
-		position: absolute;
-		top: 4px;
-		left: 106ex;
-		display: block;
-		width: 31px;
-		height: 75px;
-		background: none;
-	}
-	.barraNavegacion:after{
-		content: "";
-		position: absolute;
-		top: 5px;
-		left: 13px;
-		display: block;
-		width: 30px;
-		height: 75px;
-		background: none;	
+	.barraNavegacion::after{
+		left: -30px;
 	}
 	.barraNavegacion ul{
 		margin: 0;
@@ -312,6 +286,9 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 		display: block;
 		height: auto;
 	}
+	.barraNavegacion::after{
+		content: none;
+	}
 	.barraNavegacion li {
 		width: 50%;
 		float: left;
@@ -328,5 +305,8 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 	.sublistaMenu > li {
 		padding-bottom: 10px;
 		padding-top: 10px;
+	}
+	.facebook, .twitter{
+		display: none;
 	}
 }

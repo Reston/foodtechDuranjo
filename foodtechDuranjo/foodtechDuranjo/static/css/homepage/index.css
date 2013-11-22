@@ -19,6 +19,7 @@ h2{
 }
 .flexslider{
 	border: 22px solid #FFF;
+	overflow: hidden;
 }
 .b1m1{
 	position: absolute;

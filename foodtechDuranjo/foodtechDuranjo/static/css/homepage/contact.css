@@ -71,6 +71,12 @@ input[type="submit"]{
 	padding: 10px 25px;
 	color: #FFF;
 }
+/* =========== MENSAJE ENVIADO ================== */
+.mensajeenviado{
+	margin-top: 55px;
+	text-align: center;
+}
+
 @media screen and (max-width: 500px) {
 	.contactoCampos, .textareaDescripcion {
 		width: 100%;

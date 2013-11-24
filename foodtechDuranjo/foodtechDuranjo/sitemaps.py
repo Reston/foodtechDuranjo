@@ -1,7 +1,7 @@
 #-*- encoding: utf-8 -*-
 from django.contrib import sitemaps
 from django.core.urlresolvers import reverse
-from foodtechDuranjo.apps.productos.models import Categoria, Producto
+from foodtechDuranjo.apps.productos.models import Categoria
 
 
 class StaticViewSitemap(sitemaps.Sitemap):
@@ -25,17 +25,6 @@ class CategoriaSitemap(sitemaps.Sitemap):
 
 	def items(self):
 		return Categoria.objects.all()
-
-	def lastmod(self, obj):
-		return obj.modificado_en
-
-
-class ProductoSitemap(sitemaps.Sitemap):
-	changefreq = 'weekly'
-	priority = 0.6
-
-	def items(self):
-		return Producto.objects.all()
 
 	def lastmod(self, obj):
 		return obj.modificado_en

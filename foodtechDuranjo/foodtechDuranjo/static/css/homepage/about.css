@@ -39,7 +39,7 @@
 }
 .nuestrosClientes ul{
 	padding: 15px;
-	margin: 0;
+	margin-left: 100px;
 }
 .nuestrosClientes li{
 	display: inline-block;
@@ -68,5 +68,8 @@
 	.nuestrosClientes li {
 		width: auto;
 		display: list-item;
+	}
+	.nuestrosClientes ul{
+		margin-left: 0;
 	}
 }

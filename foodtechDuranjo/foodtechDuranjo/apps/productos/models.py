@@ -30,7 +30,6 @@ class Producto(models.Model):
 	def __unicode__(self):
 		return self.titulo
 
-
 	#def get_absolute_url(self):
 	#	titulo = self.titulo.replace(' ', '_')
 	#	return reverse('productoproducto', kwargs={'titulo': titulo})

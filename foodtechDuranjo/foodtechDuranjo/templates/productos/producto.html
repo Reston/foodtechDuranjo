@@ -16,6 +16,7 @@ Categorias de productos - Foodtech
 {% block contenido %}
 <section class="producto">
 	<div class="wrapper">
+		<a class="back-link" href="{% url 'productocategoria' %}">«Volver</a>	
 		{% for item in producto %}
 		<div class="tituloStyle"><h2>{{ item.titulo }}</h2></div>
 		<div class="izquierda">

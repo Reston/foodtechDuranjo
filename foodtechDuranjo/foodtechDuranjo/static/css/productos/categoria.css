@@ -30,6 +30,9 @@ h3{
 	line-height: 2em;
 	border: 1px solid #A3A3A3;
 }
+.verProductoBoton{
+	height: 53px;
+}
 .lineaProducto{
 	display: inline-block;
 	vertical-align: top;

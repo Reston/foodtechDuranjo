@@ -15,7 +15,8 @@
 .tituloimg {
 	position: absolute;
 	top: 81%;
-	width: 10%;
+	width: 590px;
+	padding-right: 10px;
 	line-height: 50px;
 	text-align: right;
 	background-color: #FFF;
@@ -96,6 +97,9 @@
 		margin-left: 2%;
 	}
 	.abajoimg{
+		display: none;
+	}
+	.tituloimg {
 		display: none;
 	}
 }

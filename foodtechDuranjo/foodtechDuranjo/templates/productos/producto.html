@@ -37,7 +37,7 @@ Categorias de productos - Foodtech
 			<div class="caja">
 				<p class="maintext">{{ item.descripcion }}</p>
 				<p class="relleno">¿Deseas conocer dónde adquirir nuestros productos?</p>
-				<a class="likclientes" href="#"> Visita nuestra lista de Clientes</a> 
+				<a href="{% url 'homepageabout' %}#clientes" class="likclientes"> Visita nuestra lista de Clientes</a> 
 			</div>
 		</div>	
 		<img class="abajoimg"src="{{ MEDIA_URL }}/{{item.imagen_abajo}}" alt="{{item.titulo}}">	

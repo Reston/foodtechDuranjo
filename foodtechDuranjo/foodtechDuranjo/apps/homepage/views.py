@@ -32,7 +32,8 @@ def contact(request):
 			content = u'Referente a: %s \nEmpresa: %s Email contacto: %s \nAsunto: %s \nTelefono: %s \nMensaje: %s' % (cd['referente'], cd['empresa'], 
 																														cd['email'], asunto, 
 																														cd['telefono'], cd['texto'])
-			send_mail(asunto, content, 'contacto@foodtech.com.ve', ['contacto@foodtech.com.ve']) #falta enviar a los demás correos que dijeron
+			#send_mail(asunto, content, 'contacto@foodtech.com.ve', ['contacto@foodtech.com.ve']) #falta enviar a los demás correos que dijeron
+			print asunto+content
 	else:
 		form = contactForm()
 	ctx = {'form': form, 'success': success}

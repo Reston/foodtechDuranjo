@@ -138,7 +138,8 @@ INSTALLED_APPS = (
     'pingback',
     'taggit',
     'django.contrib.sitemaps',
-    'django_xmlrpc',    
+    'django_xmlrpc',
+    'captcha',
     'foodtechDuranjo.apps.productos',
 )
 

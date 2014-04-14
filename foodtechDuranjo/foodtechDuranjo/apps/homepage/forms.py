@@ -1,6 +1,7 @@
 #!/usr/local/bin/python
 # -*- encoding: utf-8 -*-
 from django import forms
+from captcha.fields import CaptchaField
 
 
 class contactForm(forms.Form):
@@ -12,6 +13,7 @@ class contactForm(forms.Form):
 	email = forms.EmailField(widget=forms.TextInput(attrs={'placeholder': ' nick@email.com'}))
 	telefono = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su Número de teléfono'}))
 	texto = forms.CharField(widget=forms.Textarea)
+	captcha = CaptchaField()
 
 	def clean_asunto(self):
 		cd = self.cleaned_data

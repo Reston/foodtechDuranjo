@@ -18,6 +18,7 @@ urlpatterns = patterns(
 	# url(r'^foodtechDuranjo/', include('foodtechDuranjo.foo.urls')),
 	url(r'^', include('foodtechDuranjo.apps.homepage.urls')),
 	url(r'^', include('foodtechDuranjo.apps.productos.urls')),
+	url(r'^captcha/', include('captcha.urls')),
 	# Uncomment the admin/doc line below to enable admin documentation:
 	# url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 	(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),

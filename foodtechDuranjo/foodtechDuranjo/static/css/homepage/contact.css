@@ -71,6 +71,10 @@ input[type="submit"]{
 	padding: 10px 25px;
 	color: #FFF;
 }
+.campoCaptcha{
+	margin-left: 6%;
+	width: 43%;
+}
 /* =========== MENSAJE ENVIADO ================== */
 .mensajeenviado{
 	margin-top: 55px;

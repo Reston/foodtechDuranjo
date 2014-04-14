@@ -70,6 +70,11 @@ Contacto - Duranjo
 				{{ form.texto }}
 				{{ form.texto.errors }}
 			</div>
+			<div class="campoCaptcha">
+				{{field.errors}}
+				{{form.captcha}}
+				{{form.captcha.errors}}
+			</div>
 			<div class="botonEnviar">
 				<input type="submit">
 			</div>

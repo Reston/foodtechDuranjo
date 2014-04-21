@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load url from future %}
 {% load staticfiles %}
-{% block head %} 
-<meta name="description" content="">
-{% endblock%}
 {% block title %}
-FoodTech Inicio
+FOODTECH
+{% endblock%}
+{% block head %} 
+<meta name="description" content="FOODTECH C.A.™ es una empresa de Innovación y Desarrollo de Nuevos Productos, basados en procesos biotecnológicos. Ciencia y Tecnología al servicio de la comunidad.">
 {% endblock%}
 {% block css%}
 <link rel="stylesheet" href="{% static 'css/homepage/index.css' %}">
@@ -14,7 +14,7 @@ FoodTech Inicio
 
 {% endblock %}
 {% block js %}
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="{% static 'js/adquiridos/jquery.flexslider-min.js' %}"></script>
 <script src="{% static 'js/adquiridos/jquery.imageScroller.js' %}"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>

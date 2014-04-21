@@ -133,14 +133,14 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'foodtechDuranjo.apps.homepage',
+    'foodtechDuranjo.apps.productos',
+    'django.contrib.sitemaps',
     'google_analytics',
     'blogango',
     'pingback',
     'taggit',
-    'django.contrib.sitemaps',
     'django_xmlrpc',
     'captcha',
-    'foodtechDuranjo.apps.productos',
 )
 
 # A sample logging configuration. The only tangible logging

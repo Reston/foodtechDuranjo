@@ -2,14 +2,17 @@
 {% load url from future %}
 {% load staticfiles %}
 {% block title %}
-Quiénes somos - Foodtech
+Quiénes somos - FOODTECH
 {% endblock %}
+{% block head %} 
+<meta name="description" content="FOODTECH® C.A. fue fundada en 1996 con el objetivo de ser una empresa Innovadora y Desarrolladora de Nuevos Productos de Altísima Calidad utilizando Biotecnología. Nos enfocamos en la excelencia de procesos y atención al cliente. Somos Lider en Carnes Maduradas a nivel Nacional.">
+{% endblock%}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/homepage/about.css' %}">
 {% endblock %}
 {% block js %}
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1./jquery.min.js"></script>
 {% endblock %}
 {% block contenido %}
 <section class="quienessomos">

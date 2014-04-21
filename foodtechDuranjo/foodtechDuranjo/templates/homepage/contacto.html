@@ -2,14 +2,17 @@
 {% load url from future %}
 {% load staticfiles %}
 {% block title %}
-Contacto - Duranjo
+Contacto - FOODTECH
 {% endblock %}
+{% block head %} 
+<meta name="description" content="Información y formulario de contacto con la empresa FOODTECH C.A. por este medio podrás contactar con nosotros.">
+{% endblock%}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/homepage/contact.css' %}">
 {% endblock %}
 {% block js %}
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1./jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/propios/selectable.js' %}"></script>
 {% endblock %}
 {% block contenido %}

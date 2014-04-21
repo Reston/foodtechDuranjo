@@ -2,15 +2,18 @@
 {% load url from future %}
 {% load staticfiles %}
 {% block title %}
-Categorias de productos - Foodtech
+{{ item.titulo }} - Foodtech
 {% endblock %}
+{% block head %} 
+<meta name="description" content="Producto FOODTECH® C.A. {{item.titulo}} con excelencia y calidad.">
+{% endblock%}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/productos/producto.css' %}">
 <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
 {% endblock %}
 {% block js %}
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="{% static 'js/adquiridos/jquery.flexslider-min.js' %}"></script>
 {% endblock %}
 {% block contenido %}

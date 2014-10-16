@@ -28,7 +28,7 @@ html, body{
 .rifEmpresa{
 	text-align: right;
 }
-.facebook, .twitter{
+.facebook, .twitter, .instagram{
 	background: url(../img/sn.png) no-repeat;
 	width: 50px;
 	height: 50px;
@@ -37,12 +37,17 @@ html, body{
 .facebook{
 	background-position: 0 0;
 	top: 39px;
-	right: 70px;
+	right: 92px;
 }
 .twitter{
 	background-position: -50px 0;
 	top: 39px;
-	right: 15px;
+	right: 45px;
+}
+.instagram{
+	background-position: -100px 0;
+	top: 39px;
+	right: -4px;
 }
 .logoEmpresa{
 	position: relative;
@@ -113,17 +118,23 @@ footer > .wrapper > .listaPrincipalFooter > li{
 	vertical-align: top;
 	width: 24%;
 }
-.twitterlogo, .facebooklogo{
-	background: url(../img/footersn.png) no-repeat;
+.twitterlogo{
+	background: url(../img/twit32.png) no-repeat;
 	width: 32px;
 	height: 32px;
 	display: inline-block;
 }
-.twitterlogo{
-	background-position: -32px 0;
-}
 .facebooklogo{
-	background-position: 0 0;
+	background: url(../img/fb32.png) no-repeat;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+.instagramlogo{
+	background: url(../img/ins-32.png) no-repeat;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
 }
 .logoFooter{
 	width: 150px;
@@ -306,7 +317,7 @@ footer > .wrapper > .listaPrincipalFooter li .sublistaMenu li{
 		padding-bottom: 10px;
 		padding-top: 10px;
 	}
-	.facebook, .twitter{
+	.facebook, .twitter, .instagram{
 		display: none;
 	}
 }
